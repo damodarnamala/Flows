@@ -13,6 +13,7 @@
             TOP_SECRET: ${{ secrets.TOP_SECRET }}
           run: |
             touch $HOME/file.txt 
+            echo ${TOP_SECRET}
             echo $TOP_SECRET >> $HOME/file.txt
         - name: Print file content 
           run: cat $HOME/file.txt 
