@@ -15,6 +15,4 @@
             touch $HOME/file.txt 
             echo ${TOP_SECRET}
             echo $TOP_SECRET >> $HOME/file.txt
-        - name: Print file content 
-          run: cat $HOME/file.txt 
-    
+            cat $HOME/file.txt 
