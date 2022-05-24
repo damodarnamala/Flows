@@ -36,9 +36,8 @@
           env:
             SECRET_NAME: ${{ secrets.SECRET_NAME }}
           run: |
+            touch SECRET_NAME.txt 
             echo $SECRET_NAME >> SECRET_NAME.txt
         - name: Print file content 
-          run: | 
-            touch SECRET_NAME.txt 
-            cat $HOME/SECRET_NAME.txt
+          run: cat $HOME/SECRET_NAME.txt
     
