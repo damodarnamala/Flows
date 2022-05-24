@@ -9,7 +9,7 @@
       steps:
         - uses: actions/checkout@v2
         - name: Decript file
-          run: gpg --quiet --batch --yes --descript --passphrase="$PASS_PHRASE" --output $HOME/secret.json secret.json.gpg
+          run: gpg --quiet --batch --yes --decrypt --passphrase="$PASS_PHRASE" --output $HOME/secret.json secret.json.gpg
           env:
             PASS_PHRASE: ${{secrets.PASS_PHRASE}}
         
