@@ -17,7 +17,7 @@ jobs:
         THREE: ${{secrets.TOP_SECRET}}
 
       run: | 
-        touch secret.txt
+        touch $HOME/secret.txt
         echo "Greeting  $ONE $TWO $THREE" >>  secret.txt
    
     - name: Set up secret file
