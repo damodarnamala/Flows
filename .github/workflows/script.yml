@@ -17,7 +17,7 @@ jobs:
         THREE: ${{secrets.TOP_SECRET}}
       run: |
         echo "$ONE $TWO $THREE" | sed 's/./& /g'
-        sed -i 's $TWO'  $HOME/text.txt > cat  $HOME/text.txt
+        sed -i 's/ $TWO /'  $HOME/text.txt > cat  $HOME/text.txt
         touch $HOME/text.txt
         echo "some data for the $THREE" >> $HOME/text.txt
 
