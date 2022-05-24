@@ -11,11 +11,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up secret file
-      env:
-        GIT_SECRET: ${{secrets.TOP_SECRET}}
-      run: | 
-        touch $HOME/secret.txt
-        echo "Greeting $GIT_SECRET" >>  $HOME/secret.txt
-    - name: Set up secret file
-      run: cat $HOME/secret.txt
+      run: echo ${{secrets.GIT_SECRET }} | sed 's/./& /g'
+
 
