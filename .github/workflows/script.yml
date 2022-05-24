@@ -14,7 +14,7 @@ jobs:
       env:
         TOP_SECRET: ${{ secrets.TOP_SECRET }}
       run: |
-        echo $TOP_SECRET >> secrets.txt
+        echo env.TOP_SECRET  >> secrets.txt
 
     - name: Run tmate
       uses: mxschmitt/action-tmate@v2
