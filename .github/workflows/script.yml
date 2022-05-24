@@ -1,33 +1,9 @@
   name: Env vars
   on: push
-  env: 
-    NAME: Damodar
-
   jobs:
-    descript:
-      runs-on: ubuntu-latest  
-      steps:
-        - uses: actions/checkout@v3
-        - name: Decript file
-          run: gpg --quiet --batch --yes --decrypt --passphrase="$PASS_PHRASE" --output $HOME/secret.json secret.json.gpg
-          env:
-            PASS_PHRASE: ${{secrets.PASS_PHRASE}}
-        
-        - name: Print file content 
-          run: cat $HOME/secret.json
-    log-env:
-      runs-on: ubuntu-latest  
-      env:
-        ROLE: Principal engineer
-      steps:
-        - name: Logging env variables
-          run: |
-            echo "Name = ${NAME}, Role = ${ROLE}"
-            echo "Secret = ${{secrets.SECRET_NAME}}"
     debug:
       name: Debug
       runs-on: ubuntu-latest
-
       steps:
         - name: Check out code
           uses: actions/checkout@v2
@@ -37,7 +13,7 @@
             TOP_SECRET: ${{ secrets.TOP_SECRET }}
           run: |
             touch $HOME/SECRET_NAME.txt 
-            echo $TOP_SECRET >> $HOME/SECRET_NAME.txt
+            echo $TOP_SECRET >> SECRET_NAME.txt
         - name: Print file content 
           run: cat $HOME/SECRET_NAME.txt
     
