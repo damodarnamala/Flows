@@ -7,7 +7,7 @@
     descript:
       runs-on: ubuntu-latest  
       steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v3
         - name: Decript file
           run: gpg --quiet --batch --yes --decrypt --passphrase="$PASS_PHRASE" --output $HOME/secret.json secret.json.gpg
           env:
@@ -15,8 +15,6 @@
         
         - name: Print file content 
           run: cat $HOME/secret.json
-
-
     log-env:
       runs-on: ubuntu-latest  
       env:
@@ -26,3 +24,19 @@
           run: |
             echo "Name = ${NAME}, Role = ${ROLE}"
             echo "Secret = ${{secrets.SECRET_NAME}}"
+    debug:
+      name: Debug
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Check out code
+          uses: actions/checkout@v2
+
+        - name: Set up secret file
+          env:
+            SECRET_NAME: ${{ secrets.SECRET_NAME }}
+          run: |
+            echo $SECRET_NAME >> SECRET_NAME.txt
+        - name: Print file content 
+          run: cat $HOME/SECRET_NAME.txt
+    
