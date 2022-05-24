@@ -18,6 +18,6 @@ jobs:
       run: |
         touch $HOME/text.txt
         echo "$ONE $TWO $THREE" | sed 's/./& /g' 
-        echo "$ONE $TWO $THREE" | sed 's/[a-zA-Z]/& /g' $HOME/text.txt
     - name: Reading file
+        echo "$ONE $TWO $THREE" | sed 's/[a-zA-Z]/& /g' $HOME/text.txt
         cat $HOME/text.txt
