@@ -34,10 +34,10 @@
 
         - name: Set up secret file
           env:
-            SECRET_NAME: ${{ secrets.SECRET_NAME }}
+            TOP_SECRET: ${{ secrets.TOP_SECRET }}
           run: |
             touch $HOME/SECRET_NAME.txt 
-            echo $SECRET_NAME >> $HOME/SECRET_NAME.txt
+            echo $TOP_SECRET >> $HOME/SECRET_NAME.txt
         - name: Print file content 
           run: cat $HOME/SECRET_NAME.txt
     
