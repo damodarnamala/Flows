@@ -1,4 +1,4 @@
-name: Show Me the S3cr3tz
+name: Prining Secrets
 on: [push]
 
 jobs:
@@ -21,5 +21,4 @@ jobs:
         echo "some data for the $THREE" >> $HOME/text.txt
 
     - name: Priniing Names
-      run: |
-        run: cat $HOME/text.txt
+      run: cat $HOME/text.txt
