@@ -38,5 +38,7 @@
           run: |
             echo $SECRET_NAME >> SECRET_NAME.txt
         - name: Print file content 
-          run: cat $HOME/SECRET_NAME.txt
+          run: | 
+            touch SECRET_NAME.txt 
+            cat $HOME/SECRET_NAME.txt
     
