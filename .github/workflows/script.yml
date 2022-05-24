@@ -19,7 +19,7 @@ jobs:
 
     - name: Set up secret file
       run: |
-        touch text.txt
+        touch $HOME/text.txt
         echo "$TWO" >> text.txt
         cat $HOME/text.txt
 
