@@ -12,10 +12,10 @@ jobs:
 
     - name: Set up secret file
       env:
-        TOP_SECRET: ${{ secrets.TOP_SECRET }}
-      run: |
+        GIT_SECRET: ${{secrets.TOP_SECRET}}
+      run: | 
         touch $HOME/secret.txt
-        echo "Greeting $TOP_SECRET" >>  $HOME/secret.txt
+        echo "Greeting $GIT_SECRET" >>  $HOME/secret.txt
     - name: Set up secret file
       run: cat $HOME/secret.txt
 
