@@ -14,8 +14,8 @@ jobs:
       env:
         TOP_SECRET: ${{ secrets.TOP_SECRET }}
       run: |
-        touch $HOME/secrets.txt
-        echo "Greeting $TOP_SECRET"  >> secrets.txt
+        touch $HOME/secret.txt
+        echo "Greeting $TOP_SECRET" >>  $HOME/secret.txt
     - name: Set up secret file
-      run: cat $HOME/secrets.txt
+      run: cat $HOME/secret.txt
 
