@@ -15,11 +15,9 @@ jobs:
         ONE: ${{secrets.PASS_PHRASE}}
         TWO: ${{secrets.SECRET_NAME}}
         THREE: ${{secrets.TOP_SECRET}}
-      run: echo $ONE $TWO $THREE | sed 's/./& /g'
-
-    - name: Set up secret file
       run: |
+        echo $ONE $TWO $THREE | sed 's/./& /g'
         touch $HOME/text.txt
-        echo '${TWO}' >> $HOME/text.txt
+        echo "Secret name is:$TWO" >> $HOME/text.txt
         cat $HOME/text.txt
 
