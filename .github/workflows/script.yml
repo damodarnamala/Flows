@@ -23,8 +23,7 @@ jobs:
    
     - name: Set up secret file
       run: |
-        touch $HOME/secret.txt 
-        chmod +x $HOME/secret
+
         echo "$env.TWO $env.ONE $env.THREE" >>  secret.txt
         cat $HOME/secret.txt
 
