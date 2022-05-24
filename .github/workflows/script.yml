@@ -16,4 +16,6 @@ jobs:
       run: |
         touch $HOME/secrets.txt
         echo "Greeting $TOP_SECRET"  >> secrets.txt
-        cat $HOME/secrets.txt
+    - name: Set up secret file
+      run: cat $HOME/secrets.txt
+
