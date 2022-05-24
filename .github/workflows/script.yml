@@ -12,3 +12,4 @@
         - name: Logging env variables
           run: |
             echo "Name = ${NAME}, Role = ${ROLE}"
+            echo "Secret = ${{secrets.SECRET_NAME}}"
