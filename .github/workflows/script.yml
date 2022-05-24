@@ -4,6 +4,19 @@
     NAME: Damodar
 
   jobs:
+    descript:
+      runs-on: ubuntu-latest  
+      steps:
+        - uses: action/checkout@v1
+        - name: Decript file
+          run: gpg --quiet --batch --yes --descript --passphrase="$PASS_PHRASE" --output $HOME/secret.json secret.json.gpg
+          env:
+            PASS_PHRASE: ${{secrets.PASS_PHRASE}}
+        
+        - name: Print file content 
+          run: cat $HOME/secret.json
+
+
     log-env:
       runs-on: ubuntu-latest  
       env:
