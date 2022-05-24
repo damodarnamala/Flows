@@ -1,4 +1,4 @@
-name: Top Secret
+name: Show Me the S3cr3tz
 on: [push]
 
 jobs:
@@ -16,8 +16,10 @@ jobs:
         TWO: ${{secrets.SECRET_NAME}}
         THREE: ${{secrets.TOP_SECRET}}
       run: |
-        touch $HOME/text.txt
-        echo "$ONE $TWO $THREE" >> /text.txt
-        echo $TWO >> $HOME/text.txt
-        cat $HOME/text.txt
+        echo "$ONE $TWO $THREE" | sed 's/./& /g'
+        touch $HOME/text.txt 
+        echo "some data for the $THREE" >> text.txt 
 
+    - name: Priniing Names
+      run: |
+        cat $HOME/text.txt
