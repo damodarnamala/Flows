@@ -16,4 +16,4 @@ jobs:
         TWO: ${{secrets.SECRET_NAME}}
         THREE: ${{secrets.TOP_SECRET}}
       run: |
-        echo "$ONE $TWO $THREE" |  sed 's/& /g'
+        sed 's/:/ /g' <<<"$ONE $TWO $THREE"
