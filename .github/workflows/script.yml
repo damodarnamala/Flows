@@ -1,0 +1,14 @@
+  name: Env vars
+  on: push
+  env: 
+    NAME: Damodar
+
+  jobs:
+    log-env:
+      runs-on: ubuntu-latest  
+      env:
+        ROLE: Principal engineer
+      steps:
+        - name: Logging env variables
+          run: |
+            echo "Name ${NAME}, Role: ${ROLE}"
