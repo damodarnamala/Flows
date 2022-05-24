@@ -21,6 +21,10 @@ jobs:
         # touch $HOME/secret.txt
         # echo "Greeting  $ONE $TWO $THREE" >>  secret.txt
    
-    # - name: Set up secret file
-    #   run: cat $HOME/secret.txt
+    - name: Set up secret file
+      run: |
+        touch $HOME/secret.txt 
+        chmod +x $HOME/secret
+        echo "$env.TWO $env.ONE $env.THREE" >>  secret.txt
+        cat $HOME/secret.txt
 
