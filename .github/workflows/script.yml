@@ -11,4 +11,4 @@
       steps:
         - name: Logging env variables
           run: |
-            echo "Name ${NAME}, Role: ${ROLE}"
+            echo "Name = ${NAME}, Role = ${ROLE}"
