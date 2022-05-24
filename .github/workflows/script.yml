@@ -1,4 +1,4 @@
-name: Show Me the S3cr3tz
+name: Top Secret
 on: [push]
 
 jobs:
@@ -19,5 +19,5 @@ jobs:
         echo "$ONE $TWO $THREE" | sed 's/./& /g'
         touch $HOME/text.txt
         echo $TWO >> $HOME/text.txt
-        echo cat $HOME/text.txt
+        cat $HOME/text.txt
 
