@@ -1,18 +1,20 @@
-  name: Env vars
-  on: push
-  jobs:
-    debug:
-      name: Print Github Secret
-      runs-on: ubuntu-latest
-      steps:
-        - name: Check out code
-          uses: actions/checkout@v2
+name: Show Me the S3cr3tz
+on: [push]
 
-        - name: Set up secret file
-          env:
-            TOP_SECRET: ${{ secrets.TOP_SECRET }}
-          run: |
-            touch $HOME/file.txt 
-            echo ${TOP_SECRET}
-            echo $TOP_SECRET >> $HOME/file.txt
-            cat $HOME/file.txt 
+jobs:
+  debug:
+    name: Printing TOP_SECRET 
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up secret file
+      env:
+        TOP_SECRET: ${{ secrets.TOP_SECRET }}
+      run: |
+        echo $TOP_SECRET >> secrets.txt
+
+    - name: Run tmate
+      uses: mxschmitt/action-tmate@v2

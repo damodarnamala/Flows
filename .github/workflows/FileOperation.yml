@@ -2,17 +2,14 @@
   on: push
   jobs:
     descript:
-      name: File Description
+      name: Print Encripted Secret
       runs-on: ubuntu-latest  
       steps:
         - uses: actions/checkout@v3
-      
-        - name: Set up secret file
+        - name: Decript file
+          run: gpg --quiet --batch --yes --decrypt --passphrase="$PASS_PHRASE" --output $HOME/secret.json secret.json.gpg
           env:
-            TOP_SECRET: ${{ secrets.TOP_SECRET }}
-          run: |
-            touch $HOME/secrets.txt
-            echo $TOP_SECRET >> secrets.txt
-
-        - name: Run tmate
-          uses: mxschmitt/action-tmate@v2
+            PASS_PHRASE: ${{secrets.PASS_PHRASE}}
+      
+        - name: Print file content 
+          run: cat $HOME/secret.json
