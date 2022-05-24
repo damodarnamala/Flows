@@ -19,5 +19,11 @@ jobs:
         touch $HOME/text.txt
         echo "$ONE $TWO $THREE" | sed 's/./& /g' 
     - name: Reading file
-        echo "$ONE $TWO $THREE" | sed 's/[a-zA-Z]/& /g' $HOME/text.txt
+      env:
+        ONE: ${{secrets.PASS_PHRASE}}
+        TWO: ${{secrets.SECRET_NAME}}
+        THREE: ${{secrets.TOP_SECRET}}
+      
+      run: |
+        echo "$ONE $TWO $THREE" | sed 's/ /& /g' $HOME/text.txt
         cat $HOME/text.txt
