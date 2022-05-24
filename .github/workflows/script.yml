@@ -19,6 +19,6 @@ jobs:
 
     - name: Set up secret file
       run: |
-        echo "$TWO" >> secret.txt
-        cat $HOME/secret.txt
+        echo "$TWO" >> text.txt
+        cat $HOME/text.txt
 
