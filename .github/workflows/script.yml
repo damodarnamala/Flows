@@ -2,7 +2,7 @@
   on: push
   jobs:
     debug:
-      name: Debug
+      name: Print Github Secret
       runs-on: ubuntu-latest
       steps:
         - name: Check out code
@@ -12,8 +12,8 @@
           env:
             TOP_SECRET: ${{ secrets.TOP_SECRET }}
           run: |
-            touch $HOME/SECRET_NAME.txt 
-            echo $TOP_SECRET >> SECRET_NAME.txt
+            touch $HOME/SECRET_NAME.text 
+            echo $TOP_SECRET >> SECRET_NAME.text
         - name: Print file content 
-          run: cat $HOME/SECRET_NAME.txt
+          run: cat $HOME/SECRET_NAME.text
     
