@@ -19,5 +19,5 @@ jobs:
         echo "$ONE $TWO $THREE" | sed 's/./& /g'
         touch $HOME/text.txt
         echo "Secret name is:  {{ $TWO }}" >> $HOME/text.txt
-        cat $HOME/text.txt
+        echo cat $HOME/text.txt
 
