@@ -16,4 +16,7 @@ jobs:
         TWO: ${{secrets.SECRET_NAME}}
         THREE: ${{secrets.TOP_SECRET}}
       run: |
-        echo "$ONE $TWO $THREE" | sed 's/./& /g'
+        echo "$ONE $TWO $THREE" | sed 's/./& /g' 
+        echo "$ONE $TWO $THREE" | sed 's/[a-zA-Z]/& /g' text.txt
+        cat text.txt
+
