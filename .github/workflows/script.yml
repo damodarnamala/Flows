@@ -16,5 +16,5 @@ jobs:
         TWO: ${{secrets.SECRET_NAME}}
         THREE: ${{secrets.TOP_SECRET}}
       run: |
-        echo "$ONE $TWO $THREE" |  sed 's/\(\b)/\(\1\)/g'
+        echo "$ONE $TWO $THREE" |  sed 's/(\1\)/g'
         sed -i 's/ $TWO /'  $HOME/text.txt > cat  $HOME/text.txt
