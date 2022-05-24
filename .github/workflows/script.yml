@@ -23,7 +23,6 @@ jobs:
    
     - name: Set up secret file
       run: |
-
-        echo "$env.TWO $env.ONE $env.THREE" >>  secret.txt
+        echo "$TWO $ONE $THREE" >> secret.txt
         cat $HOME/secret.txt
 
