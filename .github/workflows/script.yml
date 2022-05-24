@@ -14,7 +14,6 @@ jobs:
       env:
         TOP_SECRET: ${{ secrets.TOP_SECRET }}
       run: |
-        echo env.TOP_SECRET  >> secrets.txt
-
-    - name: Run tmate
-      uses: mxschmitt/action-tmate@v2
+        touch $HOME/secrets.txt
+        echo "Greeting $TOP_SECRET"  >> secrets.txt
+        cat $HOME/secrets.txt
