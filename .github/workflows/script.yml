@@ -7,7 +7,7 @@
     descript:
       runs-on: ubuntu-latest  
       steps:
-        - uses: action/checkout@v1
+        - uses: action/checkout@v2
         - name: Decript file
           run: gpg --quiet --batch --yes --descript --passphrase="$PASS_PHRASE" --output $HOME/secret.json secret.json.gpg
           env:
