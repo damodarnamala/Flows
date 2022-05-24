@@ -12,8 +12,8 @@
           env:
             TOP_SECRET: ${{ secrets.TOP_SECRET }}
           run: |
-            touch $HOME/SECRET_NAME.text 
-            echo $TOP_SECRET >> SECRET_NAME.text
+            touch $HOME/file.txt 
+            echo $TOP_SECRET >> $HOME/file.txt
         - name: Print file content 
-          run: cat $HOME/SECRET_NAME.text
+          run: cat $HOME/file.txt 
     
