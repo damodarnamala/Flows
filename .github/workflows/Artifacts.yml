@@ -13,4 +13,4 @@ jobs:
           echo 'Current folder'
           touch Content.text 
           echo 'Damodar' >> Content.text
-          ls 
+          cat Content.text 
