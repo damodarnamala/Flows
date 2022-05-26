@@ -1,13 +1,12 @@
-name: - Creating Artefacts 
-on:
- push:
-
+name: Artifacts Uploading
+on: [push]
 jobs:
-  create_artifacts:
+  CreateArtifacts:
+    runs-on: ubuntu-latest
     steps:
-      - name: Creating File artifacts
-      - run: |
-        mkdir Files
-        cd Files
-        touch Content.txt
-        echo hello > ./Files/Content.txt
+    - name: Creating File artifacts
+    - run: |
+       mkdir Files
+       cd Files
+       touch Content.txt
+       echo hello > ./Files/Content.txt
