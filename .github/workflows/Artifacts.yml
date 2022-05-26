@@ -5,10 +5,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - name: C     
+      - name: Creating File into folder     
         run: |
           echo 'Creating Directory'
-          mkdir Files
+          mkdir -p Files
           cd Files
           touch Content.text
           echo 'Damodar' > Content.text
