@@ -11,10 +11,10 @@ jobs:
       - name: Printing current Directory     
         run: |
           echo 'Current folder'
-          touch Content.text 
+          touchContent.text
           echo 'Damodar' >> Content.text
-          cat Content.text 
+          cat Content.text
       - uses: actions/upload-artifact@v3
         with:
-          name: Uploading Artifacts to 
-          path: $HOME/Files
+          name: Creating Artifacts 
+          path: $HOME/Files/Content.text
