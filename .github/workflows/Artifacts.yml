@@ -12,4 +12,5 @@ jobs:
         run: |
           echo 'Current folder'
           touch Content.text 
+          echo 'Damodar' >> Content.text
           ls 
