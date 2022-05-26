@@ -8,5 +8,5 @@ jobs:
         run: |
           mkdir Files
           cd Files
-          touch Content.txt
+          touch ./Files/Content.txt
           echo hello > ./Files/Content.txt
