@@ -4,6 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Creating folder Files.
         run:  mkdir $HOME/Files
       - name: Changing Directory 
@@ -14,7 +15,7 @@ jobs:
           touch Content.text
           echo 'Damodar' >> Content.text
           cat Content.text
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v2
         with:
           name: Creating Artifacts 
           path: $HOME/Files/Content.text
