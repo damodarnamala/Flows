@@ -14,7 +14,7 @@ jobs:
           touch Content.text 
           echo 'Damodar' >> Content.text
           cat Content.text 
-      - name: Uploading Artifacts to 
       - uses: actions/upload-artifact@v3
         with:
-          path:  $HOME/Files/Content.text
+          name: Uploading Artifacts to 
+          path: $HOME/Files/Content.text
