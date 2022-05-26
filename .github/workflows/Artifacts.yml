@@ -5,16 +5,14 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Creating folder Files.
-        run:  mkdir $HOME/Files
-      - name: Changing Directory 
-        run: cd $HOME/Files
-      - name: Printing current Directory     
+      - name: C     
         run: |
-          echo 'Current folder'
+          echo 'Creating Directory'
+          mkdir Files
+          cd Files
           touch Content.text
           echo 'Damodar' > Content.text
-          cat Content.text
+          cat $HOME/Files/Content.text
           open -a TextEdit Content.text
           ls
       - uses: actions/upload-artifact@v2
