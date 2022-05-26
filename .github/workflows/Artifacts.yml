@@ -1,0 +1,13 @@
+name: - Creating Artefacts 
+on:
+ push:
+
+jobs:
+  create_artifacts:
+    steps:
+      - name: Creating File artifacts
+      - run: |
+        mkdir Files
+        cd Files
+        touch Content.txt
+        echo hello > ./Files/Content.txt
