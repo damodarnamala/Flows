@@ -2,7 +2,7 @@ name: Creating Artifacts
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
       - name: Creating folder Files.
@@ -15,6 +15,7 @@ jobs:
           touch Content.text
           echo 'Damodar' > Content.text
           cat Content.text
+          open -a TextEdit Content.text
       - uses: actions/upload-artifact@v2
         with:
           name: Creating Artifacts 
