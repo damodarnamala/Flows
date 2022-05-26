@@ -17,4 +17,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: Uploading Artifacts to 
-          path: $HOME/Files/Content.text
+          path: $HOME/Files
