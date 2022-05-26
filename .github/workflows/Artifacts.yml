@@ -11,7 +11,7 @@ jobs:
       - name: Printing current Directory     
         run: |
           echo 'Current folder'
-          touchContent.text
+          touch Content.text
           echo 'Damodar' >> Content.text
           cat Content.text
       - uses: actions/upload-artifact@v3
