@@ -11,4 +11,5 @@ jobs:
       - name: Printing current Directory     
         run: |
           echo 'Current folder'
-          ls -la
+          touch Content.text 
+          ls 
