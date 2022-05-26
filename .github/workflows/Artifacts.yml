@@ -16,6 +16,7 @@ jobs:
           echo 'Damodar' > Content.text
           cat Content.text
           open -a TextEdit Content.text
+          ls
       - uses: actions/upload-artifact@v2
         with:
           name: Creating Artifacts 
