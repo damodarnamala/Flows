@@ -10,14 +10,12 @@ jobs:
       - name: Changing Directory 
         run: cd $HOME/Files
       - name: Printing current Directory     
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Creating Artifacts 
-          path: $HOME/Files/Content.text
-        
         run: |
           echo 'Current folder'
           touch Content.text
           echo 'Damodar' > Content.text
           cat Content.text
-      
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Creating Artifacts 
+          path: $HOME/Files/Content.text
