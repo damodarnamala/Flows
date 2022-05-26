@@ -12,7 +12,7 @@ jobs:
           cd Files
           touch Content.text
           echo 'Damodar' > Content.text
-          cat $HOME/Files/Content.text
+          cat Content.text
           open -a TextEdit Content.text
           ls
       - uses: actions/upload-artifact@v2
