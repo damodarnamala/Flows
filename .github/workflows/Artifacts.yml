@@ -11,4 +11,4 @@ jobs:
       - name: Printing current Directory     
         run: |
           echo 'Current folder'
-          echo pwd
+          ls -la
