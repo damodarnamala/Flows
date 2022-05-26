@@ -4,9 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Creating Folder, file then writing on to it.
+      - name: Creating folder Files.
+        run:  mkdir $HOME/Files
+      - name: Changing Directory 
+        run: cd $HOME/Files
+      - name: Printing current Directory     
         run: |
-          mkdir Files
-          cd Files
-          touch ./Files/Content.txt
-          echo hello > ./Files/Content.txt
+          echo 'Current folder'
+          echo pwd
