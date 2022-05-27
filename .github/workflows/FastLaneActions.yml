@@ -18,8 +18,10 @@ jobs:
         APPLE_KEY_CONTENT: 'CUTA8L5N5R'
         TEMP_KEYCHAIN_USER: 'Damodar_Key_Chain'
         TEMP_KEYCHAIN_PASSWORD: 'Damodar_Password_Chain'
-        lane: archive_build
+        DEVELOPER_APP_IDENTIFIER: 'com.banesco.banescomovil.tcmbrd.ios'
         skip-tracking: false
+        lane: archive_build
+
     - uses: actions/upload-artifact@v2
       with: 
         name: Download-Artifacts 
