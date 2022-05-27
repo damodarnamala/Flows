@@ -4,13 +4,30 @@ jobs:
   CreateTempKeyChain:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Creating Builds   
-        run:  fastlane archive_build
+    - uses: actions/cache@v1
+      with:
+        path: Pods
+        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-pods-
+    - name: Add repositories from repo.backbase.com
+      run: |
+        echo Installing Cocoapods
+        pod install
+    
+    - name: fastlane deploy
+      uses: maierj/fastlane-action@v1.4.0
+      env:
+        MATCH_GIT_BASIC_AUTHORIZATION: cm9oaXRrdW1hcmJhY2tiYXNlOmdocF9FOFloSWxZNThJVFpScmJSM0E3eGdSQmJoTWdaVFYwendOSDU=
+        MATCH_PASSWORD: Damodar_Password_Chain
+        MATCH_KEYCHAIN_NAME: Damodar_Key_Chain
+        MATCH_KEYCHAIN_PASSWORD: Damodar_Password_Chain
+        lane: archive_build
+        skip-tracking: false
 
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Download-Artifacts 
-          path: ./builds
+    - uses: actions/upload-artifact@v2
+      with: 
+        name: Download-Artifacts 
+        path: ./builds
 
 
