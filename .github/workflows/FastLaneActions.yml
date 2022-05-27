@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: fastlane deploy
-      run: fstlane archive_build
+      run: fastlane archive_build
       env:
         MATCH_KEYCHAIN_NAME: 'Damodar_Key_Chain'
         MATCH_KEYCHAIN_PASSWORD: 'Damodar_Password_Chain'
