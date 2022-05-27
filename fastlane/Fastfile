@@ -59,7 +59,12 @@ lane :archive_build do
       clean: true,
       output_directory: "./builds",
       skip_codesigning: true
-    )
+      skip_build_archive: false,
+      archive_path: "./builds",
+      output_directory: "./builds",
+      skip_package_ipa: false,
+      export_team_id: 'BY9LWEKRD9'
+  )
 end
 
 # delete_temp_key_chain
