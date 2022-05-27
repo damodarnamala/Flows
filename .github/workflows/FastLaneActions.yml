@@ -13,7 +13,12 @@ jobs:
         MATCH_KEYCHAIN_PASSWORD: 'Damodar_Password_Chain'
         FASTLANE_APPLE_ID: 'damodar@backbase.com'
         MATCH_PASSWORD: '12345'
-        lane: archive_build damodar@backbse.com
+        APPLE_ISSUER_ID: '69a6de80-3fc1-47e3-e053-5b8c7c11a4d1'
+        APPLE_KEY_ID: damodar@backbse.com
+        APPLE_KEY_CONTENT: 'CUTA8L5N5R'
+        TEMP_KEYCHAIN_USER: 'Damodar_Key_Chain'
+        TEMP_KEYCHAIN_PASSWORD: 'Damodar_Password_Chain'
+        lane: archive_build
         skip-tracking: false
     - uses: actions/upload-artifact@v2
       with: 
