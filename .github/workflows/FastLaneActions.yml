@@ -8,12 +8,13 @@ jobs:
     - name: fastlane deploy
       uses: maierj/fastlane-action@v1.4.0
       env:
-        MATCH_GIT_BASIC_AUTHORIZATION: cm9oaXRrdW1hcmJhY2tiYXNlOmdocF9FOFloSWxZNThJVFpScmJSM0E3eGdSQmJoTWdaVFYwendOSDU=
-        MATCH_PASSWORD: Damodar_Password_Chain
-        MATCH_KEYCHAIN_NAME: Damodar_Key_Chain
-        MATCH_KEYCHAIN_PASSWORD: Damodar_Password_Chain
+        GITHUB_API_TOKEN: cm9oaXRrdW1hcmJhY2tiYXNlOmdocF9FOFloSWxZNThJVFpScmJSM0E3eGdSQmJoTWdaVFYwendOSDU=
+        MATCH_KEYCHAIN_NAME: 'Damodar_Key_Chain'
+        MATCH_KEYCHAIN_PASSWORD: 'Damodar_Password_Chain'
         lane: archive_build
         skip-tracking: false
+        FASTLANE_APPLE_ID: 'damodar@backbase.com'
+        MATCH_PASSWORD: '12345'
 
     - uses: actions/upload-artifact@v2
       with: 
