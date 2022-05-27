@@ -57,7 +57,8 @@ lane :archive_build do
       scheme: "QA",
       silent: true,
       clean: true,
-      output_directory: "./builds"
+      output_directory: "./builds",
+      skip_codesigning: true
     )
 end
 
