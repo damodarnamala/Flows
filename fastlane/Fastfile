@@ -37,9 +37,10 @@ platform :ios do
       readonly: true,
       verbose: true,
       skip_docs: true,
+      verbose:true,
       git_basic_authorization:MATCH_GIT_BASIC_AUTHORIZATION
     )
-    sigh(force: true)
+    sync_code_signing(type: "adhoc", readonly: true)
   end
 
 
