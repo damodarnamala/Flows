@@ -3,18 +3,7 @@ on: [push]
 jobs:
   CreateTempKeyChain:
     runs-on: macos-latest
-    steps:
-    - uses: actions/cache@v1
-      with:
-        path: Pods
-        key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-pods-
-    - name: Add repositories from repo.backbase.com
-      run: |
-        echo Installing Cocoapods
-        pod install
-    
+    steps:   
     - name: fastlane deploy
       uses: maierj/fastlane-action@v1.4.0
       env:
