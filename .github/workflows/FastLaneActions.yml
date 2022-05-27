@@ -8,7 +8,7 @@ jobs:
     - name: fastlane deploy
       uses: maierj/fastlane-action@v1.4.0
       env:
-        GITHUB_API_TOKEN: cm9oaXRrdW1hcmJhY2tiYXNlOmdocF9FOFloSWxZNThJVFpScmJSM0E3eGdSQmJoTWdaVFYwendOSDU=
+        GIT_AUTHORIZATION: cm9oaXRrdW1hcmJhY2tiYXNlOmdocF9FOFloSWxZNThJVFpScmJSM0E3eGdSQmJoTWdaVFYwendOSDU=
         MATCH_KEYCHAIN_NAME: 'Damodar_Key_Chain'
         MATCH_KEYCHAIN_PASSWORD: 'Damodar_Password_Chain'
         lane: archive_build
