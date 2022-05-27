@@ -11,11 +11,10 @@ jobs:
         GIT_AUTHORIZATION: cm9oaXRrdW1hcmJhY2tiYXNlOmdocF9FOFloSWxZNThJVFpScmJSM0E3eGdSQmJoTWdaVFYwendOSDU=
         MATCH_KEYCHAIN_NAME: 'Damodar_Key_Chain'
         MATCH_KEYCHAIN_PASSWORD: 'Damodar_Password_Chain'
-        lane: archive_build
-        skip-tracking: false
         FASTLANE_APPLE_ID: 'damodar@backbase.com'
         MATCH_PASSWORD: '12345'
-
+        lane: archive_build damodar@backbse.com
+        skip-tracking: false
     - uses: actions/upload-artifact@v2
       with: 
         name: Download-Artifacts 
