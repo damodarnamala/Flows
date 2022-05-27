@@ -58,7 +58,7 @@ lane :archive_build do
       silent: true,
       clean: true,
       output_directory: "./builds",
-      skip_codesigning: true
+      skip_codesigning: true,
       skip_build_archive: false,
       archive_path: "./builds",
       output_directory: "./builds",
