@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B200E78E2840C42E0047B4F8 /* ragnarok_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200E78D2840C42E0047B4F8 /* ragnarok_appApp.swift */; };
+		B200E7902840C42E0047B4F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200E78F2840C42E0047B4F8 /* ContentView.swift */; };
+		B200E7922840C4310047B4F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B200E7912840C4310047B4F8 /* Assets.xcassets */; };
+		B200E7952840C4310047B4F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B200E7942840C4310047B4F8 /* Preview Assets.xcassets */; };
+		B200E79F2840C4310047B4F8 /* ragnarok_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200E79E2840C4310047B4F8 /* ragnarok_appTests.swift */; };
+		B200E7A92840C4310047B4F8 /* ragnarok_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200E7A82840C4310047B4F8 /* ragnarok_appUITests.swift */; };
+		B200E7AB2840C4310047B4F8 /* ragnarok_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200E7AA2840C4310047B4F8 /* ragnarok_appUITestsLaunchTests.swift */; };
+		FFEB467C010712468CCAC83E /* Pods_ragnarok_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E44662F3DD77BB366FE742 /* Pods_ragnarok_appTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B200E79B2840C4310047B4F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B200E7822840C42E0047B4F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B200E7892840C42E0047B4F8;
+			remoteInfo = "ragnarok-app";
+		};
+		B200E7A52840C4310047B4F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B200E7822840C42E0047B4F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B200E7892840C42E0047B4F8;
+			remoteInfo = "ragnarok-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37E44662F3DD77BB366FE742 /* Pods_ragnarok_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ragnarok_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6BEAE0BDFCCAC50CD8E8FC /* Pods-ragnarok-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ragnarok-appTests.debug.xcconfig"; path = "Target Support Files/Pods-ragnarok-appTests/Pods-ragnarok-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48675408248B89AC110E8D1C /* Pods-ragnarok-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ragnarok-appTests.release.xcconfig"; path = "Target Support Files/Pods-ragnarok-appTests/Pods-ragnarok-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		B200E78A2840C42E0047B4F8 /* ragnarok-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ragnarok-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200E78D2840C42E0047B4F8 /* ragnarok_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ragnarok_appApp.swift; sourceTree = "<group>"; };
+		B200E78F2840C42E0047B4F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B200E7912840C4310047B4F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B200E7942840C4310047B4F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B200E79A2840C4310047B4F8 /* ragnarok-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ragnarok-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200E79E2840C4310047B4F8 /* ragnarok_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ragnarok_appTests.swift; sourceTree = "<group>"; };
+		B200E7A42840C4310047B4F8 /* ragnarok-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ragnarok-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200E7A82840C4310047B4F8 /* ragnarok_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ragnarok_appUITests.swift; sourceTree = "<group>"; };
+		B200E7AA2840C4310047B4F8 /* ragnarok_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ragnarok_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B200E7872840C42E0047B4F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B200E7972840C4310047B4F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFEB467C010712468CCAC83E /* Pods_ragnarok_appTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B200E7A12840C4310047B4F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E04F024D4D6A6F5B9E8CA56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D6BEAE0BDFCCAC50CD8E8FC /* Pods-ragnarok-appTests.debug.xcconfig */,
+				48675408248B89AC110E8D1C /* Pods-ragnarok-appTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B200E7812840C42E0047B4F8 = {
+			isa = PBXGroup;
+			children = (
+				B200E78C2840C42E0047B4F8 /* ragnarok-app */,
+				B200E79D2840C4310047B4F8 /* ragnarok-appTests */,
+				B200E7A72840C4310047B4F8 /* ragnarok-appUITests */,
+				B200E78B2840C42E0047B4F8 /* Products */,
+				8E04F024D4D6A6F5B9E8CA56 /* Pods */,
+				C50A89529E0621D8A9BA7173 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B200E78B2840C42E0047B4F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B200E78A2840C42E0047B4F8 /* ragnarok-app.app */,
+				B200E79A2840C4310047B4F8 /* ragnarok-appTests.xctest */,
+				B200E7A42840C4310047B4F8 /* ragnarok-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B200E78C2840C42E0047B4F8 /* ragnarok-app */ = {
+			isa = PBXGroup;
+			children = (
+				B200E78D2840C42E0047B4F8 /* ragnarok_appApp.swift */,
+				B200E78F2840C42E0047B4F8 /* ContentView.swift */,
+				B200E7912840C4310047B4F8 /* Assets.xcassets */,
+				B200E7932840C4310047B4F8 /* Preview Content */,
+			);
+			path = "ragnarok-app";
+			sourceTree = "<group>";
+		};
+		B200E7932840C4310047B4F8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B200E7942840C4310047B4F8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B200E79D2840C4310047B4F8 /* ragnarok-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				B200E79E2840C4310047B4F8 /* ragnarok_appTests.swift */,
+			);
+			path = "ragnarok-appTests";
+			sourceTree = "<group>";
+		};
+		B200E7A72840C4310047B4F8 /* ragnarok-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B200E7A82840C4310047B4F8 /* ragnarok_appUITests.swift */,
+				B200E7AA2840C4310047B4F8 /* ragnarok_appUITestsLaunchTests.swift */,
+			);
+			path = "ragnarok-appUITests";
+			sourceTree = "<group>";
+		};
+		C50A89529E0621D8A9BA7173 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37E44662F3DD77BB366FE742 /* Pods_ragnarok_appTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B200E7892840C42E0047B4F8 /* ragnarok-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B200E7AE2840C4310047B4F8 /* Build configuration list for PBXNativeTarget "ragnarok-app" */;
+			buildPhases = (
+				B200E7862840C42E0047B4F8 /* Sources */,
+				B200E7872840C42E0047B4F8 /* Frameworks */,
+				B200E7882840C42E0047B4F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ragnarok-app";
+			productName = "ragnarok-app";
+			productReference = B200E78A2840C42E0047B4F8 /* ragnarok-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B200E7992840C4310047B4F8 /* ragnarok-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B200E7B12840C4310047B4F8 /* Build configuration list for PBXNativeTarget "ragnarok-appTests" */;
+			buildPhases = (
+				02B5A46560A83AD935824294 /* [CP] Check Pods Manifest.lock */,
+				B200E7962840C4310047B4F8 /* Sources */,
+				B200E7972840C4310047B4F8 /* Frameworks */,
+				B200E7982840C4310047B4F8 /* Resources */,
+				8CF0FE69F13ED7D64099E5FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B200E79C2840C4310047B4F8 /* PBXTargetDependency */,
+			);
+			name = "ragnarok-appTests";
+			productName = "ragnarok-appTests";
+			productReference = B200E79A2840C4310047B4F8 /* ragnarok-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B200E7A32840C4310047B4F8 /* ragnarok-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B200E7B42840C4310047B4F8 /* Build configuration list for PBXNativeTarget "ragnarok-appUITests" */;
+			buildPhases = (
+				B200E7A02840C4310047B4F8 /* Sources */,
+				B200E7A12840C4310047B4F8 /* Frameworks */,
+				B200E7A22840C4310047B4F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B200E7A62840C4310047B4F8 /* PBXTargetDependency */,
+			);
+			name = "ragnarok-appUITests";
+			productName = "ragnarok-appUITests";
+			productReference = B200E7A42840C4310047B4F8 /* ragnarok-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B200E7822840C42E0047B4F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B200E7892840C42E0047B4F8 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					B200E7992840C4310047B4F8 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = B200E7892840C42E0047B4F8;
+					};
+					B200E7A32840C4310047B4F8 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = B200E7892840C42E0047B4F8;
+					};
+				};
+			};
+			buildConfigurationList = B200E7852840C42E0047B4F8 /* Build configuration list for PBXProject "ragnarok-app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B200E7812840C42E0047B4F8;
+			productRefGroup = B200E78B2840C42E0047B4F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B200E7892840C42E0047B4F8 /* ragnarok-app */,
+				B200E7992840C4310047B4F8 /* ragnarok-appTests */,
+				B200E7A32840C4310047B4F8 /* ragnarok-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B200E7882840C42E0047B4F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B200E7952840C4310047B4F8 /* Preview Assets.xcassets in Resources */,
+				B200E7922840C4310047B4F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B200E7982840C4310047B4F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B200E7A22840C4310047B4F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B5A46560A83AD935824294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ragnarok-appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF0FE69F13ED7D64099E5FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ragnarok-appTests/Pods-ragnarok-appTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ragnarok-appTests/Pods-ragnarok-appTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ragnarok-appTests/Pods-ragnarok-appTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B200E7862840C42E0047B4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B200E7902840C42E0047B4F8 /* ContentView.swift in Sources */,
+				B200E78E2840C42E0047B4F8 /* ragnarok_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B200E7962840C4310047B4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B200E79F2840C4310047B4F8 /* ragnarok_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B200E7A02840C4310047B4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B200E7A92840C4310047B4F8 /* ragnarok_appUITests.swift in Sources */,
+				B200E7AB2840C4310047B4F8 /* ragnarok_appUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B200E79C2840C4310047B4F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B200E7892840C42E0047B4F8 /* ragnarok-app */;
+			targetProxy = B200E79B2840C4310047B4F8 /* PBXContainerItemProxy */;
+		};
+		B200E7A62840C4310047B4F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B200E7892840C42E0047B4F8 /* ragnarok-app */;
+			targetProxy = B200E7A52840C4310047B4F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B200E7AC2840C4310047B4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B200E7AD2840C4310047B4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B200E7AF2840C4310047B4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ragnarok-app/Preview Content\"";
+				DEVELOPMENT_TEAM = BY9LWEKRD9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.banesco.banescomovil.tcmbrd.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.banesco.banescomovil.tcmbrd.ios";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B200E7B02840C4310047B4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ragnarok-app/Preview Content\"";
+				DEVELOPMENT_TEAM = BY9LWEKRD9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.banesco.banescomovil.tcmbrd.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.banesco.banescomovil.tcmbrd.ios";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B200E7B22840C4310047B4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6BEAE0BDFCCAC50CD8E8FC /* Pods-ragnarok-appTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banesco.banescomovil.tcmbrd.ios.ragnarok-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ragnarok-app.app/ragnarok-app";
+			};
+			name = Debug;
+		};
+		B200E7B32840C4310047B4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48675408248B89AC110E8D1C /* Pods-ragnarok-appTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banesco.banescomovil.tcmbrd.ios.ragnarok-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ragnarok-app.app/ragnarok-app";
+			};
+			name = Release;
+		};
+		B200E7B52840C4310047B4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banesco.banescomovil.tcmbrd.ios.ragnarok-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ragnarok-app";
+			};
+			name = Debug;
+		};
+		B200E7B62840C4310047B4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P8C5K6GS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.banesco.banescomovil.tcmbrd.ios.ragnarok-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ragnarok-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B200E7852840C42E0047B4F8 /* Build configuration list for PBXProject "ragnarok-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B200E7AC2840C4310047B4F8 /* Debug */,
+				B200E7AD2840C4310047B4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B200E7AE2840C4310047B4F8 /* Build configuration list for PBXNativeTarget "ragnarok-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B200E7AF2840C4310047B4F8 /* Debug */,
+				B200E7B02840C4310047B4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B200E7B12840C4310047B4F8 /* Build configuration list for PBXNativeTarget "ragnarok-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B200E7B22840C4310047B4F8 /* Debug */,
+				B200E7B32840C4310047B4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B200E7B42840C4310047B4F8 /* Build configuration list for PBXNativeTarget "ragnarok-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B200E7B52840C4310047B4F8 /* Debug */,
+				B200E7B62840C4310047B4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B200E7822840C42E0047B4F8 /* Project object */;
+}

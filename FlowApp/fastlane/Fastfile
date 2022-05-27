@@ -1,19 +1,23 @@
 # puts "Name is #{ ENV['NAME'] } "
 KEY_CHAIN_NAME = ENV["MATCH_KEYCHAIN_NAME"]
 KEY_CHAIN_PASSWORD = ENV["MATCH_KEYCHAIN_PASSWORD"]
-
+MATCH_GIT_BASIC_AUTHORIZATION = ENV["MATCH_GIT_BASIC_AUTHORIZATION"]
 default_platform(:ios)
 
-
 platform :ios do
+
+  before_all do |lane, options|
+    create_temp_key_chain
+  end
+  
   # Creating temp keychain
-  desc "Description of what the lane does"
+  desc "Running ... create_temp_key_chain"
   lane :create_temp_key_chain do
     puts "Creating temp keychain with name #{KEY_CHAIN_NAME}"
     create_keychain(
       name: KEY_CHAIN_NAME,
       password: KEY_CHAIN_PASSWORD,
-      default_keychain: true,
+      default_keychain: false,
       unlock: true,
       timeout: 3600,
       lock_when_sleeps: true,
@@ -21,9 +25,47 @@ platform :ios do
   end
 
   # Creating temp keychain
-  desc "Description of what the lane does"
-  lane :delete_temp_key_chain do
-    puts "Deleting temp keychain with name #{KEY_CHAIN_NAME}"
-    delete_keychain(name: "#{KEY_CHAIN_NAME}")
+  desc "Running ... match_certificates"
+  lane :match_and_sigin_certificates do
+    puts "Running ... match_certificat #{KEY_CHAIN_NAME}"
+    create_temp_key_chain
+    match(
+      keychain_name: KEY_CHAIN_NAME,
+      keychain_password: KEY_CHAIN_PASSWORD,
+      git_basic_authorization: MATCH_GIT_BASIC_AUTHORIZATION,
+      readonly: true,
+      verbose: true,
+      skip_docs: true,
+    )
+    sigh(force: true)
   end
+
+
+# Creating temp keychain
+desc "Running ... archive_build"
+lane :archive_build do
+  puts "Running ... archive_build #{KEY_CHAIN_NAME}"
+  match_and_sigin_certificates
+  build_app(
+    # app-store", "ad-hoc",  "enterprise", "development"]
+      export_method:"ad-hoc",
+      workspace: "ragnarok-app.xcworkspace",
+      configuration: "Release",
+      scheme: "QA",
+      silent: true,
+      clean: true,
+      output_directory: "./builds"
+    )
+end
+
+# delete_temp_key_chain
+desc "Running ... delete_temp_key_chain"
+lane :delete_temp_key_chain do
+  puts "Deleting temp keychain with name #{KEY_CHAIN_NAME}"
+  delete_keychain(name: "#{KEY_CHAIN_NAME}")
+end
+
+after_all do |lane, options|
+  delete_temp_key_chain
+end
 end

@@ -1,0 +1,5 @@
+git_url("https://github.com/rohitkumarbackbase/Certificate")
+storage_mode("git")
+type("adhoc") # The default type, can be: appstore, adhoc, enterprise or development
+app_identifier(["com.banesco.banescomovil.tcmbrd.ios"])
+username("damodar@backbase.com")
