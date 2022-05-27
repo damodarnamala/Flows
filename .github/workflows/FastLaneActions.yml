@@ -5,19 +5,13 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Creating Keychain    
-        run: |
-          cd FlowApp
-          fastlane create_temp_key_chain
-      - name: Printing All Created KeyChains   
-        run: |
-          echo "Key Chains Available"
-          security list-keychains -d user
-          fastlane archive_build
+      
+      - name: Creating Builds   
+        run:  fastlane archive_build
 
       - uses: actions/upload-artifact@v2
         with:
           name: Download-Artifacts 
-          path: ./FlowApp/builds
+          path: ./builds
 
 
