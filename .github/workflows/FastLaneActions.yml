@@ -1,0 +1,15 @@
+name: Fastlane Create Keychain
+on: [push]
+jobs:
+  CreateTempKeyChain:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Creating Keychain    
+        run: |
+          cd FlowApp
+          fastlane create_temp_key_chain
+      - name: Printing All Created KeyChains   
+        run: |
+          echo "Key Chains Available"
+          security list-keychains -d user
