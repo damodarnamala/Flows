@@ -13,3 +13,11 @@ jobs:
         run: |
           echo "Key Chains Available"
           security list-keychains -d user
+          fastlane archive_build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Download-Artifacts 
+          path: ./FlowApp/builds
+
+
