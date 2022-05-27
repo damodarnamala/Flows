@@ -1,6 +1,7 @@
 # puts "Name is #{ ENV['NAME'] } "
 KEY_CHAIN_NAME = ENV["MATCH_KEYCHAIN_NAME"]
 KEY_CHAIN_PASSWORD = ENV["MATCH_KEYCHAIN_PASSWORD"]
+USER_ID = ENV["USER_ID"]
 MATCH_GIT_BASIC_AUTHORIZATION = ENV["MATCH_GIT_BASIC_AUTHORIZATION"]
 default_platform(:ios)
 
@@ -20,7 +21,7 @@ platform :ios do
       default_keychain: true,
       unlock: true,
       timeout: 3600,
-      lock_when_sleeps: true,
+      lock_when_sleeps: true
     )
   end
 
@@ -36,6 +37,7 @@ platform :ios do
       readonly: true,
       verbose: true,
       skip_docs: true,
+      git_basic_authorization:MATCH_GIT_BASIC_AUTHORIZATION
     )
     sigh(force: true)
   end

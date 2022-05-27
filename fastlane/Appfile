@@ -1,2 +1,2 @@
-app_identifier com.banesco.banescomovil.tcmbrd.ios 
-apple_id damodar@backbase.com
+app_identifier ENV["BUNDLE_ID"] 
+apple_id ENV["USER_ID"]
