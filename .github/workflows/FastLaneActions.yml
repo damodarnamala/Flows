@@ -3,7 +3,8 @@ on: [push]
 jobs:
   CreateTempKeyChain:
     runs-on: macos-latest
-    steps:   
+    steps:
+    - uses: actions/checkout@v1
     - name: fastlane deploy
       uses: maierj/fastlane-action@v1.4.0
       env:
