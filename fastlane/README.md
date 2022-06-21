@@ -47,6 +47,14 @@ Running ... archive_build
 
 Running ... delete_temp_key_chain
 
+### ios run_oclint
+
+```sh
+[bundle exec] fastlane ios run_oclint
+```
+
+Running ... oclint
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.

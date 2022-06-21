@@ -1,5 +1,9 @@
 name: Fastlane Create Keychain
-on: [push]
+on: 
+  push:
+    branches:
+      - "main"
+    
 jobs:
   CreateTempKeyChain:
     runs-on: macos-latest
@@ -19,5 +23,3 @@ jobs:
       with: 
         name: Download-Artifacts 
         path: ./builds
-
-
